@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirement</title>
+    <script src="javascript-practice.js"></script>
+</head>
+
+<body>
+    <h1>Requirement</h1>
+    <h2>### Knowledge round-up</h2>
+    <hr>
+
+    <!-- ------------------------------------- Question 1 ---------------------------------------------------- -->
+    <h3>- What are the differences between a variable that is: `null`, `undefined`? </h3>
+    <p>+ Null là một giá trị rỗng hoặc là không tồn tại, có thể được gán cho 1 biến để đại diện như không có giá trị
+    </p>
+    <p>+ undefined là không xác định. Khi khai báo một biến trong javascript mà không gán giá trị cho biến thì biến sẽ
+        là undefined </p>
+
+    <!-- ------------------------------------- Question 2 ---------------------------------------------------- -->
+    <h3>- What is `use strict`? what are the advantages and disadvantages to using it? </h3>
+    <p>Use strict là sử dụng nghiêm ngặt. Khi một đoạn lệnh được khai báo use strict thì tất cả các
+        dòng code ở phía dưới dòng khai báo use strict sẽ được quản lý một cách nghiêm ngặt hơn về cú pháp. </p>
+    <p>Ưu điểm :
+        + Ngăn chặn một số từ có thể làm keyword trong tương lai
+        + Làm cho code trở nên tường minh hơn, dễ đọc và dễ hiểu, tránh gặp những lỗi không mong muốn
+        + Dễ dàng phát hiện lỗi
+    </p>
+    <p>Nhược điểm :
+        + Có thể có một số lỗi thông thường
+    </p>
+
+    <!-- ------------------------------------- Question 3 ---------------------------------------------------- -->
+    <h3>- What are the differences between `==` and `===`? Write an example for each case (if any)?</h3>
+    <p>`==` : Chỉ so sánh về giá trị
+        Ex : "123" == 123 //true
+        123 == 123 //true
+        "123" == "123" //true
+    </p>
+    <p>`===` : So sánh cả giá trị và kiểu dữ liệu
+        Ex : "123" === 123 //false
+        123 === 123 //true
+        "123" === "123" //true
+    </p>
+
+    <!-- ------------------------------------- Question 3 ---------------------------------------------------- -->
+    <h3>- Give a list of `Falsy` values in Javascript. </h3>
+    <p>false</p>
+    <p>0</p>
+    <p>null</p>
+    <p>undefined</p>
+    <p>NaN</p>
+    <p>""</p>
+
+    <!-- ------------------------------------- Question 4 ---------------------------------------------------- -->
+    <h3> - Give an example for each of the following methods in Javascript
+        + map
+        + filter
+        + reduce
+        + find
+        + some
+    </h3>
+    <p>map :
+        const myArr = [1,2,3,4];
+        const myArrTwo = myArr.map((value, index, array) => {
+        return value * 2;
+        });
+
+        console.log{myArrTwo}; //[2,4,6,8];
+    </p>
+    <p>filter :
+        const myArr = [1,2,3,4];
+        const myArrTwo = myArr.filter((value, index, array) => {
+        return value % 2 === 0;
+        });
+
+        console.log{myArrTwo}; //[2,4];
+    </p>
+    <p>reduce :
+        const myArr = [1,2,3,4];
+        const myArrTwo = myArr.reduce((acc, curValue, curIndex, array) => {
+        return acc + curValue;
+        });
+        const avg = myArrTwo / myArr.length;
+
+        console.log{myArrTwo}; //2.5
+    </p>
+    <p>find:
+        const ages = [3, 10, 28, 20];
+
+        function checkAge(age) {
+        return age > 20;
+        }
+
+        let age = ages.find(checkAge);
+        console.log(age); // 28
+    </p>
+    <p>some:
+        const array = [1, 2, 3, 4, 5];
+        const even = (element) => element % 2 === 0;
+
+        console.log(array.some(even));
+        // true
+    </p>
+
+    <!-- ------------------------------------- Question 5 ---------------------------------------------------- -->
+    <h3>- Give an example for add a new element to an array[] (at the end) </h3>
+    <p>
+        myArr = [1,2,3];
+        myArr.push(10);
+
+        // [1, 2, 3, 10]
+    </p>
+
+    <!-- ------------------------------------- Question 6 ---------------------------------------------------- -->
+    <h3>- Give an example for add a new element to an array[] (at the beginning)</h3>
+    <p>
+        myArr = [1,2,3];
+        myArr.unshift(10);
+
+        // [10, 1, 2, 3]
+    </p>
+
+    <!-- ------------------------------------- Question 7 ---------------------------------------------------- -->
+    <h3>- Give an example for removing an element in array[]</h3>
+    <p>
+        myArr = [1,2,3];
+        myArr.pop();
+
+        // [1, 2]
+    </p>
+</body>
+
+</html>

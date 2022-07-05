@@ -15,7 +15,7 @@ a {
 
 body {
   background: #f1f1f1;
-  color: #272626;
+  color: #262626;
   font: 16px "Noto Sans", sans-serif;
 }
 
@@ -25,7 +25,7 @@ header {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background: burlywood;
+  background: #ffc180;
 }
 
 h2[for]{
@@ -36,11 +36,11 @@ h2[for]{
 }
 
 h2[for]:hover{
-    color: aquamarine;
+    color: #595959;
 }
 
 #header:hover{
-    background-color: blueviolet;
+    background-color: #ffdab3;
 }
 
 nav {
@@ -86,12 +86,12 @@ margin-top: 100px;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: burlywood;
+    background-color: #deb887;
     color: white;
   }
 
 #table-main th:hover{
-    background-color: blueviolet;
+    background-color: #efdcc3;
   }
 
 h2,p{

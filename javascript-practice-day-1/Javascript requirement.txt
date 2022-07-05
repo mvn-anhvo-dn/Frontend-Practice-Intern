@@ -1,0 +1,19 @@
+# HTML + Javascript Exercise
+​
+### Knowledge round-up
+​
+- **Javascript**
+​
+  - What are the differences between a variable that is: `null`, `undefined`?
+  - What is `use strict`? what are the advantages and disadvantages to using it?
+  - What are the differences between `==` and `===`? Write an example for each case (if any)?
+  - Give a list of `Falsy` values in Javascript.
+  - Give an example for each of the following methods in Javascript
+    + map
+    + filter
+    + reduce
+    + find
+    + some
+  - Give an example for add a new element to an array[] (at the end)
+  - Give an example for add a new element to an array[] (at the beginning)
+  - Give an example for removing an element in array[]
